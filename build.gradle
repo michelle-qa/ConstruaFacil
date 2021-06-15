@@ -10,11 +10,10 @@ repositories {
 }
 
 dependencies {
-//oi
     testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
 
 }
 
-test {
-    useJUnitPlatform()
+test{
+    useTestNG()
 }

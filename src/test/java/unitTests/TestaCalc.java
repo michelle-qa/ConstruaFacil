@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 
 
 public class TestaCalc {
-    @Test
+    @Test(priority = 1)
     public void testarSomarDoisNumeros() {
         // 1 - Prepara - Configurar - Given - Arrange
         int num1 = 5;
@@ -24,8 +24,8 @@ public class TestaCalc {
 
     }
 
-    //@Test
-    public void testarSubtrairDoisNumeros(){
+    @Test(priority = 2)
+    public void testarSubtrairDoisNumeros() {
         int num1 = 6;
         int num2 = 2;
         int resultadoEsperado = 4;
@@ -36,6 +36,7 @@ public class TestaCalc {
                 + " e o resultado atual é " + resultadoAtual);
 
         assertEquals(resultadoAtual,resultadoEsperado);
+
 
     }
 
